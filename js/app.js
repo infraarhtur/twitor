@@ -3,13 +3,13 @@ var SWLocation = '/twittor/sw.js';
 
 
 if(navigator.serviceWorker){
-
+debugger;
     if (url.includes('localhost')){
-        navigator.serviceWorker.register('/sw.js');
-    }else{
+        SWLocation= '/sw.js';
+    }
 
         navigator.serviceWorker.register(SWLocation);
-    }
+   
     
 }
 

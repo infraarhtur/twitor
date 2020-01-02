@@ -1,11 +1,11 @@
 {
-    "short_name": "twittor",
-    "name":"Twittoe para heroes",
+    "short_name": "Twittor",
+    "name": "Twittor para héroes",
     "start_url": "index.html",
     "background_color": "#3498db",
+    "theme_color": "#3498db",
     "display": "standalone",
     "orientation": "portrait",
-    "theme_color": "#3498db",
     "icons": [
         {
             "src": "img/icons/icon-72x72.png",
@@ -47,6 +47,7 @@
             "type": "image/png",
             "sizes": "512x512"
         }
-    ]
-   
+      ]
+
+
 }

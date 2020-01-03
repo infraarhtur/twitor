@@ -17,24 +17,24 @@ const mensajes = [
 // Get mensajes
 router.get('/', function (req, res) {
   // res.json('Obteniendo mensajes');
-  res.json( mensajes );
+  res.json(mensajes);
 });
 
 
 // Post mensaje
 router.post('/', function (req, res) {
-  
-console.log('lat',req.body.lat,'lng', req.body.lng)
+
+  console.log('lat', req.body.lat, 'lng', req.body.lng)
   const mensaje = {
     mensaje: req.body.mensaje,
     user: req.body.user,
     lat: req.body.lat,
-    lng:  req.body.lng
+    lng: req.body.lng,
+    foto: req.body.foto
 
   };
 
-  mensajes.push( mensaje );
-
+  mensajes.push(mensaje);
   // console.log(mensajes);
 
 
@@ -51,8 +51,8 @@ router.post('/subscribe', (req, res) => {
 
   const suscripcion = req.body;
 
-  
-  push.addSubscription( suscripcion );
+
+  push.addSubscription(suscripcion);
 
 
   res.json('subscribe');
@@ -82,9 +82,9 @@ router.post('/push', (req, res) => {
   };
 
 
-  push.sendPush( post );
+  push.sendPush(post);
 
-  res.json( post );
+  res.json(post);
 
 });
 
